@@ -1,0 +1,264 @@
+/* General Reset and Basic Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+a {
+	color: #90ee90;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+	background-color: #111;
+	color: #fff;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	position: relative;
+}
+
+.logo img {
+	width: 150px; /* Adjust this as needed */
+	height: auto;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+}
+
+nav ul li {
+	padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#menu-toggle {
+	display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+	.logo img {
+		 width: 120px; /* Adjust for mobile responsiveness */
+	}
+}
+
+
+/* Hero Section */
+.hero {
+	background: url('img/hero-image.png') no-repeat center center/cover;
+	min-height: 600px; /* Adjust the hero section height */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	animation: fadeIn 2s ease-in-out;
+	background-size: cover; /* Maintain aspect ratio */
+	background-position: center top; /* Focus on the top of the image */
+}
+
+.hero::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+	position: relative;
+	color: #fff;
+	z-index: 1;
+}
+
+.hero-content h2 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.hero-content p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.btn {
+	background-color: #90ee90;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #111;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #76c376;
+}
+
+/* Main Content */
+main {
+	padding: 3rem 2rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+/* Upcoming Gigs Section */
+.upcoming-gigs {
+	margin-bottom: 3rem;
+}
+
+.gigs-container {
+	display: flex;
+	gap: 2rem;
+}
+
+.gig {
+	flex: 1;
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gig h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.gig-link {
+	display: inline-block;
+	margin-top: 1rem;
+	color: #90ee90;
+}
+
+/* Meet the Band Section */
+/* Band Section Styles */
+
+/* Band Section Styles */
+.band {
+	margin-bottom: 3rem;
+}
+
+.band-members {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+.member {
+	text-align: center;
+	width: 22%;
+}
+
+.member-photo {
+	width: 150px; /* Fixed width for consistency */
+	height: 150px; /* Make height equal to width for a circular shape */
+	border-radius: 50%; /* Circular shape */
+	margin-bottom: 1rem;
+	object-fit: cover; /* Ensures the images fit the container */
+	object-position: bottom; /* Move the image's position down to show faces */
+	border: 4px solid #fff; /* Optional: adds a border around the image */
+}
+
+.member h3 {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.member p {
+	font-size: 1rem;
+}
+
+
+
+
+
+/* Gallery Section */
+.gallery {
+	margin-bottom: 3rem;
+}
+
+.gallery-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+}
+
+.gallery-item {
+	background-color: #ccc;
+	height: 200px;
+	border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+	margin-bottom: 3rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.contact-form button {
+	padding: 1rem;
+	background-color: #90ee90;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.contact-form button:hover {
+	background-color: #76c376;
+}
+
+/* Footer */
+footer {
+	background-color: #111;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	position: relative;
+}

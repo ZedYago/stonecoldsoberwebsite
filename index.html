@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of Stone Cold Sober Rock band. Stay updated with our latest gigs, meet the band members, and explore the gallery.">
+    <meta name="keywords" content="Metal Band, Stone Cold Sober, Gigs, Live Music, Band Members, Gallery">
+    <meta name="author" content="Stone Cold Sober">
+    <title>Stone Cold Sober Rock - Official Band Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <!-- Header Section -->
+<header>
+	<nav aria-label="Main Navigation">
+		 <a href="#" class="logo">
+			  <img src="img/logo.png" alt="Stone Cold Sober Logo" />
+		 </a>
+		 <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+		 <ul id="nav-links">
+			  <li><a href="#gigs">Gigs</a></li>
+			  <li><a href="#about-us">About Us</a></li>
+			  <li><a href="#gallery">Gallery</a></li>
+			  <li><a href="#contact-us">Contact Us</a></li>
+		 </ul>
+	</nav>
+
+
+        
+        <!-- Hero Section with Improved Image -->
+        <section class="hero" role="banner">
+            <div class="hero-content">
+                <h2>We are Stone Cold Sober Rock</h2>
+                <p>Experience the raw power of metal music, delivered with passion and soul. Follow us to stay updated on upcoming gigs.</p>
+                <a href="#gigs" class="btn" aria-label="Upcoming Gigs">Upcoming Gigs</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Upcoming Gigs Section -->
+        <section id="gigs" class="upcoming-gigs" aria-labelledby="gigs-heading">
+            <h2 id="gigs-heading">Upcoming Gigs</h2>
+            <div class="gigs-container">
+                <article class="gig">
+                    <h3>Rock Festival</h3>
+                    <p>December 10, 2024</p>
+                    <p>Los Angeles, CA</p>
+                    <a href="#" class="gig-link">Get Tickets</a>
+                </article>
+                <article class="gig">
+                    <h3>Summer Jam</h3>
+                    <p>July 23, 2024</p>
+                    <p>New York, NY</p>
+                    <a href="#" class="gig-link">Get Tickets</a>
+                </article>
+                <article class="gig">
+                    <h3>Metal Masters</h3>
+                    <p>October 5, 2024</p>
+                    <p>Chicago, IL</p>
+                    <a href="#" class="gig-link">Get Tickets</a>
+                </article>
+            </div>
+        </section>
+
+<!-- Meet the Band Section -->
+<section id="about-us" class="band" aria-labelledby="band-heading">
+	<h2 id="band-heading">Meet the Band</h2>
+	<div class="band-members">
+		 <article class="member">
+			  <img src="img/Debbie.png" alt="Debz Smith - Bass" class="member-photo">
+			  <h3>Debz Smith</h3>
+			  <p>Bass</p>
+		 </article>
+		 <article class="member">
+			  <img src="img/Jim.png" alt="Jim Bowden - Lead Guitar" class="member-photo">
+			  <h3>Jim Bowden</h3>
+			  <p>Lead Guitar</p>
+		 </article>
+		 <article class="member">
+			  <img src="img/Georgia.png" alt="Georgia Bartlet - Lead Vocals" class="member-photo">
+			  <h3>Georgia Bartlet</h3>
+			  <p>Lead Vocals</p>
+		 </article>
+		 <article class="member">
+			  <img src="img/XXX.png" alt="XXX - Drums" class="member-photo">
+			  <h3>XXX</h3>
+			  <p>Drums</p>
+		 </article>
+	</div>
+</section>
+
+
+
+
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item" role="img" aria-label="Band Performance 1"></div>
+                <div class="gallery-item" role="img" aria-label="Band Performance 2"></div>
+                <div class="gallery-item" role="img" aria-label="Band Performance 3"></div>
+                <div class="gallery-item" role="img" aria-label="Band Performance 4"></div>
+                <div class="gallery-item" role="img" aria-label="Band Performance 5"></div>
+                <div class="gallery-item" role="img" aria-label="Band Performance 6"></div>
+                <div class="gallery-item" role="img" aria-label="Band Performance 7"></div>
+                <div class="gallery-item" role="img" aria-label="Band Performance 8"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-us" class="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get in Touch</h2>
+            <p>For booking and inquiries, email us at <a href="mailto:info@stonecoldsoberrock.com">info@stonecoldsoberrock.com</a></p>
+
+            <!-- Contact Form -->
+            <form action="submit-form.php" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Stone Cold Sober Rock. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Simple toggle for mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('visible');
+        });
+    </script>
+</body>
+</html>
